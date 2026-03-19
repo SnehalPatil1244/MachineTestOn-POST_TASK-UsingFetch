@@ -200,6 +200,7 @@ function onpostupdate() {
             }
         })
         .then(data => {
+            PostForm.reset()
             let col = document.getElementById(data.id)
             let h3 = col.querySelector('.card-header h3')
             let p = col.querySelector('.card-body p')
@@ -270,7 +271,7 @@ function onRemove(ele) {
 
 
     });
-   
+
 }
 
 
